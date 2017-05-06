@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<title>Mostra idades</title>
+		<meta charset="utf-8">
+	</head>
+	<body>
+		<script>
+			var pulaLinha = function() {
+				document.write("<br><hr><br>");
+			};
+			
+			// esta função mostra uma frase no navegador e pula uma linha
+			var mostra = function(frase) {
+				document.write("<big>" + frase + "</big>");
+				pulaLinha();
+			};
+			
+			// agora vamos colocar no navegador o ano em que eu nasci
+			var ano = 2017;
+			mostra("Eu nasci em: " + (ano - 26));
+			pulaLinha();
+			mostra("Adriano nasceu em: " + (ano - 31));
+			pulaLinha();
+			mostra("Paulo nasceu em :" + (ano - 37));
+			pulaLinha();
+		</script>
+	</body>
+</html>

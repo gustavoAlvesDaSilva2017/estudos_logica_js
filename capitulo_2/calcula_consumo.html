@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<title>Calcular consumo</title>
+		<meta charset="utf-8">
+	</head>
+	<body>
+		<h3>Álcool ou Gasolina?</h3>
+	
+		<script>
+			var tanque = 40;
+			var caminhoComGasolina = 480;
+			var consumoDeGasolina = caminhoComGasolina / tanque;
+			var caminhoComAlcool = 300;
+			var consumoDeAlcool = caminhoComAlcool / tanque;
+			var numero = 0.314178473;
+			var precoDaGasolina = 2.90;
+			var precoDoAlcool = 2.40;
+			var precoPorKilometroDoAlcool = consumoDeAlcool / precoDoAlcool;
+			var precoPorKilometroDaGasolina = consumoDeGasolina / precoDaGasolina;
+			document.write("Consumo de gasolina: " + Math.round(consumoDeGasolina) + "<br>");
+			document.write("Consumo de álcool: " + Math.round(consumoDeAlcool));
+			document.write("<br>Número com duas casas decimais: " + numero.toFixed(2) + "<br>");
+			document.write("Preço por Quilômetro do álcool: " + precoPorKilometroDoAlcool.toFixed(2) + "<br>");
+			document.write("Preço por Quilômetro da gasolina: " + precoPorKilometroDaGasolina.toFixed(2) + "<br>");
+		</script>
+	</body>
+</html>
