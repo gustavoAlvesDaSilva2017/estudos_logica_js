@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<title>Cálculo de IMC</title>
+		<meta charset="utf-8">
+	</head>
+	<body>
+		<script>
+			var pulaLinha = function() {
+				document.write("<br>");
+			};
+		
+			var mostra = function(frase) {
+				document.write(frase);
+				pulaLinha();
+			};
+			
+			var calculaIMC = function(altura, peso) {
+				var imc = peso / (altura * altura);
+				return imc;
+			};
+			
+			var minhaAltura = 1.70;
+			var meuPeso = 65;
+			var alturaDoMeuPrimo = 1.76;
+			var pesoDoMeuPrimo = 83;
+	
+			var meuIMC = calculaIMC(minhaAltura, meuPeso);
+			var IMCdoMeuPrimo = calculaIMC(alturaDoMeuPrimo, pesoDoMeuPrimo);
+			
+			mostra("O meu IMC é: " + meuIMC);
+			mostra("O IMC do meu primo é: " + IMCdoMeuPrimo);
+		</script>
+	</body>
+</html>
